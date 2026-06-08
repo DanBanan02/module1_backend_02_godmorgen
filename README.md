@@ -22,6 +22,55 @@ ReadMe Del 2
 - Leveraging loops with TUI apps (Terminal User Interface)
 - Using loops with collections (List, Ararys, etc.)
 
+______________________________
+Break = stop
+==============================
+Breaks (are used to stop loops early useful to avoid infinitie loops if we want diffrent condition to terminate it)
+
+Console.WriteLine();
+break;
+Console.WriteLine();
+if (true)
+
+______________________________
+Return = 
+==============================
+Return; a return statment 
+
+______________________________
+While = 
+==============================
+
+
+______________________________
+int = 
+==============================
+for loop example
+for loop needs 3 things in its declaration line ( for ())
+
+1. An interator (a counter variable)
+
+2. a condition
+
+3. A increment or decrement Rule
+
+Sample: 
+for (int i = 0; i < 10; i++)
+{
+    // is only available here.
+}
+
+multiple loops in "int"
+
+______________________________
+for loop = 
+==============================
+
+______________________________
+Scope 
+==============================
+
+scope in i scope kan ikke brukes via int...
 
 
 

@@ -1,21 +1,21 @@
 ﻿
-// Run a command 10 times
 
-// Using a while loop.
+Console.WriteLine("Hello");
 
-// Counter will prevent infinite loops
-// Spawm (x) Times.
+int score = 0;
 
-Console.WriteLine("Starting counter:");
-int counter = 1;
+for (int i = 10; i < 10; i++);
 
-while (counter <= 10)
-
+Console.WriteLine("interarator is now" + i);
 {
-Console.WriteLine("Counter is now:" + counter);
-
-// Decrement counter
-counter += 1;
+    // as example: for each ilteration multply the score by 3
+    score *= 3;
+    Console.WriteLine("Score:");
+    if (score >= 20)
+    {
+        Console.WriteLine("Congrats ur score is 20 or above.");
+        break;
+    }
+    Console.WriteLine("Start");
 }
-
-Console.WriteLine("While loop finished running");
+Console.WriteLine("End");
