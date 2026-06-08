@@ -2,7 +2,7 @@
 Console.Clear();
 
 // basic user menu with abilitiy to "Exit"
-string ExitCommand = "Exit";
+string ExitCommand = "exit";
 while(true)
 {
     Console.WriteLine("Hello");
@@ -10,7 +10,7 @@ while(true)
 
     Console.WriteLine("Name:" + input);
 
-    if (input == ExitCommand)
+    if (input.ToLower() == ExitCommand)
         {
             break;
         }
