@@ -1,19 +1,21 @@
 ﻿// clear the console
+using System.Numerics;
+
 Console.Clear();
 
-// basic user menu with abilitiy to "Exit"
-string ExitCommand = "exit";
+// sum app:
+
+int total =0;
+
 while(true)
 {
-    Console.WriteLine("Hello");
-    string input = Console.ReadLine();
+    Console.Write("Enter Number:");
+    
+    String InputNumber = Console.ReadLine();
 
-    Console.WriteLine("Name:" + input);
+    int Number = int.Parse(InputNumber);
+    total += Number;
+    
+    Console.WriteLine("Total:" + total);
+    }
 
-    if (input.ToLower() == ExitCommand)
-        {
-            break;
-        }
-}
-
-Console.WriteLine("Program exit");
