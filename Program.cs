@@ -6,14 +6,16 @@
 // Counter will prevent infinite loops
 // Spawm (x) Times.
 
+Console.WriteLine("Starting counter:");
+int counter = 1;
 
-int counter = 3;
-
-while (counter > 0)
+while (counter <= 10)
 
 {
-Console.WriteLine("Hello, World");
+Console.WriteLine("Counter is now:" + counter);
 
 // Decrement counter
-counter -= 1;
+counter += 1;
 }
+
+Console.WriteLine("While loop finished running");
