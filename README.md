@@ -14,7 +14,7 @@ ReadMe Del 2
 ============================================
 
 # Learning Objectives for this repo
--what is a loop, and why they're useful
+- what is a loop, and why they're useful
 - type of loops in C#
 - how to start them in C#
 - how to start them, stop them and also break out early.
@@ -115,3 +115,18 @@ Foreach
 
 string = collection
 string = list of characters
+
+______________________________
+Cheat Sheet:
+==============================
+
+Return Type	Gives Back:
+
+void	=   Nothing
+int	    =   Number
+string	=   Text
+bool	=   true or false
+char    =	Single character
+
+Think of return as:
+"Take this value and send it back to whoever called me."

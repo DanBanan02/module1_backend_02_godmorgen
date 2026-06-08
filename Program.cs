@@ -1,22 +1,14 @@
-﻿
-
-Console.Clear();
-
-// useful string properties and metohds
-// (property): length
-// (method): ToUpper() // ToLower() (to convert lower or upper case)
-// (method): Contains (Some char) // check if a string contains a specific character.
-
-string myText = "hello, World.";
-
-for (int i = 0; i < myText.Length; i++)
+﻿// this makes the class flow, into it's focus...
+class Program
 {
-    /* Console.Write(MyText[i]); */
-}
+    // This one has string connector
+       static void NeedThisToWork(string Here)
+    {   // Static Void is closed to this one.
+        Console.WriteLine("Place string here:" + Here);
+    }
 
-foreach (var Noob in myText)
-{
-    Console.Write(Noob);
+    static void Main() // Main Meaning ( Core function )
+    {   // This Continues anyway ( Unless string is added.)
+        NeedThisToWork("This Continues down here...");
+    }
 }
-
-myText.Contains();
