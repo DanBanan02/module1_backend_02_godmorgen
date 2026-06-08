@@ -32,6 +32,12 @@ break;
 Console.WriteLine();
 if (true)
 
+    if ()
+    {
+        break;
+    }
+
+
 ______________________________
 Return = 
 ==============================
@@ -74,3 +80,18 @@ scope in i scope kan ikke brukes via int...
 
 
 
+
+______________________________
+Infinity loop
+==============================
+
+// clear the console
+Console.Clear();
+
+while(true)
+{
+    Console.WriteLine("Hello");
+    string input = Console.ReadLine();
+
+    Console.WriteLine("Name:" + input);
+}

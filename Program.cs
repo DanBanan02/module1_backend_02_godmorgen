@@ -1,21 +1,19 @@
-﻿
+﻿// clear the console
+Console.Clear();
 
-Console.WriteLine("Hello");
-
-int score = 0;
-
-for (int i = 10; i < 10; i++);
-
-Console.WriteLine("interarator is now" + i);
+// basic user menu with abilitiy to "Exit"
+string ExitCommand = "Exit";
+while(true)
 {
-    // as example: for each ilteration multply the score by 3
-    score *= 3;
-    Console.WriteLine("Score:");
-    if (score >= 20)
-    {
-        Console.WriteLine("Congrats ur score is 20 or above.");
-        break;
-    }
-    Console.WriteLine("Start");
+    Console.WriteLine("Hello");
+    string input = Console.ReadLine();
+
+    Console.WriteLine("Name:" + input);
+
+    if (input == ExitCommand)
+        {
+            break;
+        }
 }
-Console.WriteLine("End");
+
+Console.WriteLine("Program exit");
