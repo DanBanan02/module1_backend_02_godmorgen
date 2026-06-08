@@ -1,21 +1,23 @@
-﻿// clear the console
-using System.Numerics;
-
+﻿
 Console.Clear();
+// Char Extraction / use of char.
+// .Length er antallet, begynner fra 0 til 15.
+// samme som while loop, men må ha track i stede. (condition)
+string MyText = "Hello, Person";
 
-// sum app:
+Console.WriteLine(MyText.Length);
 
-int total =0;
+Console.WriteLine(MyText[0]);
+Console.Write(MyText[1]);
+Console.Write(MyText[2]);
 
-while(true)
+Console.WriteLine(MyText[15]);
+for (int i = 0; i < MyText.Length; i++)
 {
-    Console.Write("Enter Number:");
-    
-    String InputNumber = Console.ReadLine();
+    Console.Write(MyText[i]);
+}
 
-    int Number = int.Parse(InputNumber);
-    total += Number;
+foreach (var item in collection)
+{
     
-    Console.WriteLine("Total:" + total);
-    }
-
+}

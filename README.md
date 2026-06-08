@@ -95,3 +95,23 @@ while(true)
 
     Console.WriteLine("Name:" + input);
 }
+
+
+
+______________________________
+Char
+==============================
+
+// Intro to Collections
+
+// Only Single Letter / Character / No-Math
+char character = 'a';
+
+Console.WriteLine("Character1");
+
+______________________________
+Foreach
+==============================
+
+string = collection
+string = list of characters
