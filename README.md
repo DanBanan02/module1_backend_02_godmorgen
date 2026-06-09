@@ -176,5 +176,12 @@ Item Listing....
 */
 
 ______________________________
-Diff Pasword.
+Standard foreach
 ==============================
+
+
+    
+    foreach (var Number in Numbers)
+    {
+        
+    }
