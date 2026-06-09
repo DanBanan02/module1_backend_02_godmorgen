@@ -1,95 +1,40 @@
-﻿// clear the console
-Console.Clear();
+﻿// Current Time
+// Check Current time and gives the information back to the code.
+// Prints the set Message to current Time: ( Text given )
+DateTime now = DateTime.Now;
 
-// Product Array
-string[] products = { "Soup", "Cat Food", "Dog Food"};
+// If Time is between 6-12 = God Morgen
+if (now.TimeOfDay >= new TimeSpan(6, 0, 0) && now.TimeOfDay <= new TimeSpan(12, 0, 0))
 
-// Users Shooping cart List
-List<string> cart = new List<string>();
 
-// Shows avaiable products
-static void ShowProducts(string[] availableProducts)
 {
-
-    Console.WriteLine(availableProducts[0]);
-
-    foreach (string availableProductsproduct in availableProducts)
-    {
-        Console.WriteLine(availableProductsproduct);
-    }
-
+    // Text: God Morgen
+    Console.WriteLine("God morgen");
 }
 
-ShowProducts(products);
+// If Time is between 13-18 = God ettermidag
+else if (now.TimeOfDay >= new TimeSpan(13, 0, 0) && now.TimeOfDay <= new TimeSpan(18, 0, 0))
 
-// Show cart content
-static void ShowCartContents(List<string> userShoppingCart)
 {
-    Console.WriteLine("Item in cart: ");
-    foreach (string item in userShoppingCart)
-    {
-        Console.WriteLine(item);
-    }
-}
-// cart.Add("Soup");
-// ShowCartContents(cart);
-
-// Add an item to cart
-static void AddItemToCart(string ItemName)
-{
-    // Logic to add item to cart goes here:
-    
-
-}
-static void RemoveItemToCart(string ItemName)
-{
-    // Logic to Remove item from cart goes here:
-    
+    // Text: God EtterMidag
+    Console.WriteLine("God ettermidag");
 }
 
-// UI
+// IF Time is between 19-00 = God Kveld
+else if (now.TimeOfDay >= new TimeSpan(19, 0, 0) && now.TimeOfDay <= new TimeSpan(0, 0, 0))
 
-while (true)
 {
-    Console.Clear();
-
-    Console.WriteLine("Shopping cart app ");
-Console.WriteLine();
-Console.WriteLine("1. View avaiable product: ");
-Console.WriteLine("2. View my shopping art");
-Console.WriteLine("3. Add a product to cart");
-Console.WriteLine("4. Remove a product from cart");
-Console.WriteLine("5. Exit");
-
-Console.WriteLine("Choose an option: ");
-
-string choice = Console.ReadLine();
-
-Console.WriteLine();
-
-// Adding Logic
-if (choice == "1")
-    {
-        // Might miss Parameter = Previous calling.
-
-        ShowProducts(products);
-        Console.ReadLine(); // Temporary break
-    }
-    else if (choice == "2") // View my cart
-    {
-        ShowCartContents(cart);
-    }
-    else if (choice == "3") // Add product to cart
-    {
-        cart.Add("");
-    }
-    else if (choice == "4") // Remove product from cart
-    {
-        
-    }
-    else if (choice == "5") // Exit function
-    {
-        
-    }
-
+    // Text: God Kveld
+    Console.WriteLine("God Kveld");
 }
+
+// If Time is between 01-05 = God Natt
+else if (now.TimeOfDay >= new TimeSpan(1, 0, 0) && now.TimeOfDay <= new TimeSpan(5, 0, 0))
+
+{
+    // Text: God Natt
+    Console.WriteLine("God Natt");
+}
+
+// If non of the above happens this will ping insted.
+Console.WriteLine(now.ToString("HH:mm"));

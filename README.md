@@ -1,187 +1,70 @@
-cd..                                                                                                
-dir                                                                                                 
-mkdir module1_backend_02_godmorgen
-cd .\module1_backend_02_godmorgen\
-dotnet new console
-dotnet new gitignore
-code .
---> source controle --> initialize repository -> "init" --> publish --> public / private
 
+Program:
 
-____________________________________________
+1. Checks the current time
+2. Sends a message Depending on the current time back to user
 
-ReadMe Del 2
-============================================
+the program will look for local time, and enter the message set to the current time.
+this time will show (Houre & Minutes)
 
-# Learning Objectives for this repo
-- what is a loop, and why they're useful
-- type of loops in C#
-- how to start them in C#
-- how to start them, stop them and also break out early.
-- Infitite loops
-- Leveraging loops with TUI apps (Terminal User Interface)
-- Using loops with collections (List, Ararys, etc.)
+Useful function:
 
-______________________________
-Break = stop
-==============================
-Breaks (are used to stop loops early useful to avoid infinitie loops if we want diffrent condition to terminate it)
+No useful function for now.
+this progam only takes time and give message back.
 
-Console.WriteLine();
-break;
-Console.WriteLine();
-if (true)
+ToDoList:
 
-    if ()
-    {
-        break;
-    }
-
-
-______________________________
-Return = 
-==============================
-Return; a return statment 
-
-______________________________
-While = 
-==============================
-
-
-______________________________
-int = 
-==============================
-for loop example
-for loop needs 3 things in its declaration line ( for ())
-
-1. An interator (a counter variable)
-
-2. a condition
-
-3. A increment or decrement Rule
-
-Sample: 
-for (int i = 0; i < 10; i++)
-{
-    // is only available here.
-}
-
-multiple loops in "int"
-
-______________________________
-for loop = 
-==============================
-
-______________________________
-Scope 
-==============================
-
-scope in i scope kan ikke brukes via int...
+1. Fix Class & Void to this program to give a more correct respons...
+2. Give Current Season Message
+3. Give Current Month Message
+4. Give a total result.
+5. Give amount of hours left of the day
+6. days left of the month and year.
+7. give options to see diffrent information about (Time, Day, Month, year) (houres left of the day, days left of the month, days left of the year.)
+8. Fix Menu, and a second menu with option of reseting/Exiting.
 
 
 
+[ Menu Layout: ]
 
-______________________________
-Infinity loop
-==============================
+____________________________________________________
+-- Option Time Current --
 
-// clear the console
-Console.Clear();
+1. Show current time
+2. Show current day
+3. show current month
 
-while(true)
-{
-    Console.WriteLine("Hello");
-    string input = Console.ReadLine();
+4. Show All
 
-    Console.WriteLine("Name:" + input);
-}
+6. Next Page
+7. Exit
 
+____________________________________________________
+-- Option Time Left --
 
+1. Show houres left of the day
+2. Show Days left of the month
+3. Show days left of the year
 
-______________________________
-Char
-==============================
+4. Show All
 
-// Intro to Collections
+5. Previous Page
+6. Next Page
+7. Exit
 
-// Only Single Letter / Character / No-Math
-char character = 'a';
+____________________________________________________
+-- Show All --- 
 
-Console.WriteLine("Character1");
+ListAll:
 
-______________________________
-Foreach
-==============================
+1) Info 1 (Current Time)
+2) Info 2 (Current Day)
+3) Info 3 (Current Month)
+------------------
+4) Info 4 (Houres left of day)
+5) Info 5 (Days left of Month)
+6) Info 6 (Days left of Year)
 
-string = collection
-string = list of characters
-
-______________________________
-Cheat Sheet:
-==============================
-
-Return Type	Gives Back:
-
-void	=   Nothing
-int	    =   Number
-string	=   Text
-bool	=   true or false
-char    =	Single character
-
-Think of return as:
-"Take this value and send it back to whoever called me."
-
-______________________________
-Diff Pasword.
-==============================
-
-// clear the console
-Console.Clear();
-
-// Check password strenght
-string passowrd = "abcd2";
-
-// Does password contain a number?
-bool hasNumber = false;
-foreach (char character in passowrd)
-{
-    hasNumber = char.IsDigit(character);
-    // Console.WriteLine(hasNumber);
-    // Console.WriteLine(character.IsDigit);
-
-}
-
-// check if password strenght passes our critteria
-if (hasNumber)
-{
-    // Happens if password does contain number.
-    Console.WriteLine("Password contains a number, so we're all good!");
-}
-else
-{
-    // happens if pasword does not contain ( Number )
-    Console.WriteLine("Password needs to contain a number! DO BETTER!");
-}
-
-
-______________________________
-Item Listing....
-==============================
-
-// More diff ways of listing items.
-
-/*  string product1 = "Coffe";
-    string product2 = "Tea";
-    string Product3 = "Bun"; 
-*/
-
-______________________________
-Standard foreach
-==============================
-
-
-    
-    foreach (var Number in Numbers)
-    {
-        
-    }
+5. Previous Page
+7. Exit
+____________________________________________________
