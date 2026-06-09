@@ -1,40 +1,40 @@
 ﻿// clear the console
 Console.Clear();
 
-// Check password strenght
-string passowrd = "abcd2";
+// Array = Type collection
 
-// Does password contain a number?
-bool hasNumber = false;
+string[] products = {"Coffe", "Tea", "Bun"};
 
-// Ideas: Check Lenght 7
-int minLenght = 8;
+Console.WriteLine("Our Products");
+// Products er connected with {Items inside brackets.}
+Console.WriteLine(products);
 
-foreach (char character in passowrd)
+// int, bool, char, string, Objects, arrays, ...
+
+// Arrays, are fixed lenght and types.
+
+foreach (var product in products)
 {
-    if (char.IsDigit(character))
-    {
-        hasNumber = true;
-    }
-    
-    // Console.WriteLine(hasNumber);
-    // Console.WriteLine(character.IsDigit);
-
+    Console.WriteLine(product);
 }
 
-// check if password strenght passes our critteria
-if (hasNumber)
+Console.WriteLine();
+// list: are basically a collection that can grow in size.
+
+// a shopping ( Basket/Cart ) as a list ( Example: )
+
+List<string> cart = new List<string>();
+
+cart.Add("Coffe");
+cart.Add("Soup");
+
+Console.WriteLine("Your Shopping cart" + cart.Count);
+
+foreach (string item in cart)
 {
-    // Happens if password does contain number.
-    Console.WriteLine("Password contains a number, so we're all good!");
-}
-else
-{
-    // happens if pasword does not contain ( Number )
-    Console.WriteLine("Password needs to contain a number! DO BETTER!");
+    Console.WriteLine(item);
 }
 
-if ( passowrd.Length >= minLenght)
-{
-    Console.WriteLine("Password is long enough");
-}
+// Removes a spesific item in cart.
+cart.Remove("Soup");
+

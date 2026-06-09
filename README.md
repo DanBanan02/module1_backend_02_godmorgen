@@ -162,3 +162,19 @@ else
     // happens if pasword does not contain ( Number )
     Console.WriteLine("Password needs to contain a number! DO BETTER!");
 }
+
+
+______________________________
+Item Listing....
+==============================
+
+// More diff ways of listing items.
+
+/*  string product1 = "Coffe";
+    string product2 = "Tea";
+    string Product3 = "Bun"; 
+*/
+
+______________________________
+Diff Pasword.
+==============================
