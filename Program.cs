@@ -5,13 +5,13 @@ class TimeMenu
     public void ShowResult(string text)
     {
         Console.WriteLine();
-        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("=============================");
         Console.ResetColor();
-        Console.ForegroundColor = ConsoleColor.DarkBlue;
+        Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine(text);
         Console.ResetColor();
-        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("=============================");
         Console.ResetColor();
         Console.WriteLine();
