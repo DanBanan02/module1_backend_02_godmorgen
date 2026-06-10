@@ -188,22 +188,19 @@ class MenuList
             await Task.Delay(150);
 
             Console.SetCursorPosition(0, Console.CursorTop);
-            Console.Write($"Loading: {i}%   ");
+            Console.Write($"Searching: {i}%  C:\\Windows\\System32  ");
         }
 
         Console.WriteLine();
-        Console.WriteLine("Finished!");
+        Console.WriteLine("Localized folder: System32");
 
         await Task.Delay(2500);
 
-        Console.WriteLine("");
-        Console.WriteLine("Localizing folder: System32 - Complete");
-        await Task.Delay(2500);
         Console.WriteLine("");
         Console.WriteLine("-- Folder to delete: System32");
-        await Task.Delay(5000);
+        await Task.Delay(7500);
         Console.WriteLine("");
-        Console.WriteLine("-- Recover folder: system32 ");
+        Console.WriteLine("-- Folder System deleted successfully.");
         await Task.Delay(5000);
     }
 
