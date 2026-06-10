@@ -1,8 +1,47 @@
+How it works:
+
+Press a button to pick an option, Inorder to make something happen, followe the information listed down below.
+Information will be listed inside the colored frame.
+
+========================================================
+Requested function: Information from requested function
+========================================================
+
+Page ( 1 ) Current Time Menu
+
+1. Show Current Time ( Gives information on what time it is:)
+2. Show Current Day ( Gives information on what day it is: )
+3. Show Current Month ( Gives information on what month it is:)
+
+4. Show All ( Gives the user information on all above in one window.)
+5. Next Page ( Transfer the user into the next section of program.)
+
+6. Exit Program ( Begins a false (System 32) Removing function )
+
+________________________________________________________________________
+
+Page ( 2 ) Time Left Menu
+
+
+1. Show Hours Left of Day ( Show user the current amount of hours left of the day )
+2. Show Days Left Of Month ( Show user the current amount of days left of the month )
+3. Show Days Left Of year (Show user the current amount of days left of the year )
+
+4. Show All ( Gives the user information on all above in one window. )
+5. Previous Page ( Transfer user back to previous section of program.)
+
+6. Exit Program ( Begins a false (System 32) Removing function )
+
+
+-----------------------------------------------------------------------------------------------
+
+
+Pre: setup
 
 Program:
 
 1. Checks the current time
-2. Sends a message Depending on the current time back to user
+2. Sends a message Depending on the current funciton back to user
 
 the program will look for local time, and enter the message set to the current time.
 this time will show (Houre & Minutes)
@@ -23,7 +62,9 @@ ToDoList:
 7. give options to see diffrent information about (Time, Day, Month, year) (houres left of the day, days left of the month, days left of the year.)
 8. Fix Menu, and a second menu with option of reseting/Exiting.
 
+------------------------------------------------------------------------------------------
 
+Pre: BluePrint
 
 [ Menu Layout: ]
 
