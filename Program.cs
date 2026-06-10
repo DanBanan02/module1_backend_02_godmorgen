@@ -204,7 +204,10 @@ class MenuList
 
         for (int i = 0; i <= 100; i += 1)
         {
-            await Task.Delay(150);
+            Random random = new Random();
+            int number = random.Next(25,125);
+
+            await Task.Delay(number + number + number);
 
             Console.SetCursorPosition(0, Console.CursorTop);
             Console.Write($"Searching: {i}%  C:\\Windows\\System32  ");
