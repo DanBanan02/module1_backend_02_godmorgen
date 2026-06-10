@@ -90,7 +90,9 @@ class MenuList
 
             if (page == 1)
             {
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("==== Current time menu ====");
+                Console.ResetColor();
                 Console.WriteLine();
                 Console.WriteLine("1. Show current time");
                 Console.WriteLine("2. Show current day");
@@ -102,7 +104,9 @@ class MenuList
 
             else
             {
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("==== Time left menu ====");
+                Console.ResetColor();
                 Console.WriteLine();
                 Console.WriteLine("1. Show hours left of day");
                 Console.WriteLine("2. Show days left of month");
