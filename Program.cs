@@ -34,7 +34,7 @@ class TimeMenu
 
     public void ShowHoursLeftOfDay()
     {
-        int HoursLeft = 23 - DateTime.Now.Hour;
+        int HoursLeft = 24 - DateTime.Now.Hour;
         ShowResult("Hours left of today: " +  HoursLeft);
     }
 
@@ -141,7 +141,7 @@ class MenuList
                     running = false;
 
                 else
-                    Console.WriteLine("Error code: 142");
+                    Console.WriteLine("Error code: 144");
             }
 
             else
@@ -165,7 +165,7 @@ class MenuList
                     running = false;
 
                 else
-                    Console.WriteLine("Error Code: 166");
+                    Console.WriteLine("Error Code: 168");
             }
 
             if (running)
