@@ -200,7 +200,7 @@ class MenuList
         Console.WriteLine("-- Folder to delete: System32");
         await Task.Delay(7500);
         Console.WriteLine("");
-        Console.WriteLine("-- Folder System deleted successfully.");
+        Console.WriteLine("-- Folder System32 deleted successfully.");
         await Task.Delay(5000);
     }
 
