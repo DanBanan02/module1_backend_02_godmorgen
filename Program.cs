@@ -90,7 +90,7 @@ class MenuList
 
             if (page == 1)
             {
-                Console.WriteLine("==== Curent Time Menu ====");
+                Console.WriteLine("==== Current Time Menu ====");
                 Console.WriteLine();
                 Console.WriteLine("1. Show Current Time");
                 Console.WriteLine("2. Show Current Day");
