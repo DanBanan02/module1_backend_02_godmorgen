@@ -1,7 +1,7 @@
 ﻿
 class TimeMenu
 {
-    
+    // Result box
     public void ShowResult(string text)
     {
         Console.WriteLine();
@@ -17,27 +17,32 @@ class TimeMenu
         Console.WriteLine();
     }
 
+    // Output = Current time
     public void ShowCurrentTime()
     {
         ShowResult("Current time: " +  DateTime.Now.ToString("HH:mm"));
     }
 
+    // Output = Current day
     public void ShowCurrentDay()
     {
         ShowResult("Current day: "+ DateTime.Now.DayOfWeek);
     }
 
+    // Output = Current month
     public void ShowCurrentMonth()
     {
         ShowResult("Current Month: " + DateTime.Now.ToString("MMMM"));
     }
 
+    // Output = Hours left of day
     public void ShowHoursLeftOfDay()
     {
         int HoursLeft = 24 - DateTime.Now.Hour;
         ShowResult("Hours left of today: " +  HoursLeft);
     }
 
+    // Output = Days left of month
     public void ShowDaysLeftOfMonth()
     {
         DateTime now = DateTime.Now;
@@ -48,6 +53,7 @@ class TimeMenu
         ShowResult("Days left of this month: " + daysLeft);
     }
 
+    // Output = Days left of year
     public void ShowDaysLeftOfYear()
     {
         DateTime now = DateTime.Now;
@@ -58,6 +64,7 @@ class TimeMenu
         ShowResult("Days left of this year: " + daysLeft);
     }
 
+    // Page ( 1 ) Selections
     public void ShowAllpage1()
     {
         ShowCurrentTime();
@@ -65,6 +72,7 @@ class TimeMenu
         ShowCurrentMonth();
     }
 
+    // Page ( 2 ) Selections
     public void ShowAllpage2()
     {
         ShowHoursLeftOfDay();
@@ -88,8 +96,9 @@ class MenuList
             Console.Clear();
 
 
+            // Page ( 1 )
             if (page == 1)
-            {
+            {   
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("==== Current time menu ====");
                 Console.ResetColor();
@@ -102,6 +111,8 @@ class MenuList
                 Console.WriteLine("6. Exit program");
             }
 
+
+            // Page ( 2 )
             else
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
@@ -116,6 +127,7 @@ class MenuList
                 Console.WriteLine("6. Exit program");
             }
 
+            // Give user ( Hint )
             Console.WriteLine();
             Console.Write("Choose an option to: ");
 
@@ -124,7 +136,8 @@ class MenuList
             Console.Clear();
 
 
-            if (page == 1)
+            // Page: ( 1 )
+            if (page == 1) 
             {
                 if (choice == '1')
                     menu.ShowCurrentTime();
@@ -145,10 +158,11 @@ class MenuList
                     running = false;
 
                 else
-                    Console.WriteLine("Error code: 144");
+                    Console.WriteLine("Error code: 149");
             }
 
-            else
+            // Page ( 2 )
+            else 
             {
                 if (choice == '1')
                     menu.ShowHoursLeftOfDay();
@@ -169,7 +183,7 @@ class MenuList
                     running = false;
 
                 else
-                    Console.WriteLine("Error code: 168");
+                    Console.WriteLine("Error code: 174");
             }
 
             if (running)
@@ -180,6 +194,7 @@ class MenuList
 
         }
 
+            // Loading Screen ( System32 )
             Console.WriteLine("Exiting TimeCheck...");
             Console.WriteLine("");
             Console.WriteLine(" -- Localizing folder: System32");    
