@@ -19,12 +19,12 @@ class TimeMenu
 
     public void ShowCurrentTime()
     {
-        ShowResult("Current Time: " +  DateTime.Now.ToString("HH:mm"));
+        ShowResult("Current time: " +  DateTime.Now.ToString("HH:mm"));
     }
 
     public void ShowCurrentDay()
     {
-        ShowResult("Current Day: "+ DateTime.Now.DayOfWeek);
+        ShowResult("Current day: "+ DateTime.Now.DayOfWeek);
     }
 
     public void ShowCurrentMonth()
@@ -90,30 +90,30 @@ class MenuList
 
             if (page == 1)
             {
-                Console.WriteLine("==== Current Time Menu ====");
+                Console.WriteLine("==== Current time menu ====");
                 Console.WriteLine();
-                Console.WriteLine("1. Show Current Time");
-                Console.WriteLine("2. Show Current Day");
-                Console.WriteLine("3. Show Current Month");
-                Console.WriteLine("4. Show All");
-                Console.WriteLine("5. Next Page");
-                Console.WriteLine("6. Exit Program");
+                Console.WriteLine("1. Show current time");
+                Console.WriteLine("2. Show current day");
+                Console.WriteLine("3. Show current month");
+                Console.WriteLine("4. Show all");
+                Console.WriteLine("5. Next page");
+                Console.WriteLine("6. Exit program");
             }
 
             else
             {
-                Console.WriteLine("==== Time Left Menu ====");
+                Console.WriteLine("==== Time left menu ====");
                 Console.WriteLine();
-                Console.WriteLine("1. Show Hours Left Of Day");
-                Console.WriteLine("2. Show Days Left Of Month");
-                Console.WriteLine("3. Show Days Left Of Year");
-                Console.WriteLine("4. Show All");
-                Console.WriteLine("5. Previous Page");
-                Console.WriteLine("6. Exit Program");
+                Console.WriteLine("1. Show hours left of day");
+                Console.WriteLine("2. Show days left of month");
+                Console.WriteLine("3. Show days left of year");
+                Console.WriteLine("4. Show all");
+                Console.WriteLine("5. Previous page");
+                Console.WriteLine("6. Exit program");
             }
 
             Console.WriteLine();
-            Console.Write("Choose An Option To: ");
+            Console.Write("Choose an option to: ");
 
 
             char choice = Console.ReadKey().KeyChar;
@@ -165,7 +165,7 @@ class MenuList
                     running = false;
 
                 else
-                    Console.WriteLine("Error Code: 168");
+                    Console.WriteLine("Error code: 168");
             }
 
             if (running)
