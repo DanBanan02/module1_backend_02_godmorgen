@@ -44,23 +44,27 @@ Program:
 2. Sends a message Depending on the current funciton back to user
 
 the program will look for local time, and enter the message set to the current time.
-this time will show (Houre & Minutes)
+time show (Houre & Minutes)
 
 Useful function:
 
 No useful function for now.
 this progam only takes time and give message back.
 
-ToDoList:
+ToDoList Completed Tasks:
 
-1. Fix Class & Void to this program to give a more correct respons...
-2. Give Current Season Message
-3. Give Current Month Message
-4. Give a total result.
-5. Give amount of hours left of the day
-6. days left of the month and year.
-7. give options to see diffrent information about (Time, Day, Month, year) (houres left of the day, days left of the month, days left of the year.)
-8. Fix Menu, and a second menu with option of reseting/Exiting.
+1. Fixed Menu
+2. Use of class & void
+3. Button do: selected function
+4. Added "Trolling Fuction"
+5. Added multiple result showing
+6. Added Option: ( 1, 2, 3, 4, 5, 6 )
+7. Fine tuned the look of code
+8. multiple pages: 1 & 2 + ShowAll
+9. Navigation system
+10. Added box to Result, to make it easier to read
+11. Added Loading Screen...
+12. Added: Current time & Time left of
 
 ------------------------------------------------------------------------------------------
 
