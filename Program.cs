@@ -1,4 +1,8 @@
 ﻿
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Net.Sockets;
+
 class TimeMenu
 {
     // Result box
@@ -158,7 +162,7 @@ class MenuList
                     running = false;
 
                 else
-                    Console.WriteLine("Error code: 161");
+                    Console.WriteLine("Error code: 164");
             }
 
             // Page ( 2 )
@@ -183,7 +187,7 @@ class MenuList
                     running = false;
 
                 else
-                    Console.WriteLine("Error code: 186");
+                    Console.WriteLine("Error code: 189");
             }
 
             if (running)
@@ -200,9 +204,11 @@ class MenuList
             Console.WriteLine(" -- Localizing folder: System32");    
             Console.WriteLine("");
 
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("Loading: 0%");
+            
 
-        for (int i = 0; i <= 100; i += 1)
+        for (int i = 1; i <= 100; i += 1)
         {
             Random random = new Random();
             int number = random.Next(25,125);
@@ -211,8 +217,11 @@ class MenuList
 
             Console.SetCursorPosition(0, Console.CursorTop);
             Console.Write($"Searching: {i}%  C:\\Windows\\System32  ");
-        }
 
+
+        }
+        Console.ResetColor();
+        
         Console.WriteLine();
         Console.WriteLine("Localized folder: System32");
 
