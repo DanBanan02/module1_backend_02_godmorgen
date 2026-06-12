@@ -25,6 +25,25 @@ class TimeMenu
     public void ShowCurrentTime()
     {
         ShowResult("Current time: " +  DateTime.Now.ToString("HH:mm"));
+        
+        // Show Greetings depending on the Time of hour.
+        int hour = DateTime.Now.Hour;
+        if (hour >= 1 && hour <= 12)
+        {
+            ShowResult("God morgen!");
+        }
+        else if (hour >= 13 && hour <= 18)
+        {
+            ShowResult("God ettermiddag");
+        }
+        else if (hour >= 19 && hour <= 24)
+        {
+            ShowResult("God Kveld");
+        }
+        else if (hour >= 1 && hour <= 5)
+        {
+            ShowResult("God natt");
+        }
     }
 
     // Output = Current day
