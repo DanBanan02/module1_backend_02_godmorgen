@@ -5,6 +5,7 @@ using System.Net.Sockets;
 
 class TimeMenu
 {
+  
     // Result box
     public void ShowResult(string text)
     {
@@ -24,25 +25,28 @@ class TimeMenu
     // Output = Current time
     public void ShowCurrentTime()
     {
+        Console.WriteLine("Enter Name: ");
+string userName = Console.ReadLine();
+        
         ShowResult("Current time: " +  DateTime.Now.ToString("HH:mm"));
         
         // Show Greetings depending on the Time of hour.
         int hour = DateTime.Now.Hour;
         if (hour >= 1 && hour <= 12)
         {
-            ShowResult("God morgen!");
+            ShowResult(userName+" God morgen!");
         }
         else if (hour >= 13 && hour <= 18)
         {
-            ShowResult("God ettermiddag!");
+            ShowResult(userName+" God ettermiddag!");
         }
         else if (hour >= 19 && hour <= 24)
         {
-            ShowResult("God Kveld!");
+            ShowResult(userName+" God Kveld!");
         }
         else if (hour >= 1 && hour <= 5)
         {
-            ShowResult("God natt!");
+            ShowResult(userName+" God natt!");
         }
         
     }
