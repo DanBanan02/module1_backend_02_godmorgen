@@ -34,16 +34,17 @@ class TimeMenu
         }
         else if (hour >= 13 && hour <= 18)
         {
-            ShowResult("God ettermiddag");
+            ShowResult("God ettermiddag!");
         }
         else if (hour >= 19 && hour <= 24)
         {
-            ShowResult("God Kveld");
+            ShowResult("God Kveld!");
         }
         else if (hour >= 1 && hour <= 5)
         {
-            ShowResult("God natt");
+            ShowResult("God natt!");
         }
+        
     }
 
     // Output = Current day
@@ -129,9 +130,13 @@ class MenuList
                 Console.WriteLine("1. Show current time");
                 Console.WriteLine("2. Show current day");
                 Console.WriteLine("3. Show current month");
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("4. Show all");
+                Console.ResetColor();
                 Console.WriteLine("5. Next page");
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("6. Exit program");
+                Console.ResetColor();
             }
 
 
@@ -145,9 +150,13 @@ class MenuList
                 Console.WriteLine("1. Show hours left of day");
                 Console.WriteLine("2. Show days left of month");
                 Console.WriteLine("3. Show days left of year");
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("4. Show all");
+                Console.ResetColor();
                 Console.WriteLine("5. Previous page");
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("6. Exit program");
+                Console.ResetColor();
             }
 
             // Give user ( Hint )
@@ -181,7 +190,7 @@ class MenuList
                     running = false;
 
                 else
-                    Console.WriteLine("Error code: 164");
+                    Console.WriteLine("Error code: 185");
             }
 
             // Page ( 2 )
@@ -206,7 +215,7 @@ class MenuList
                     running = false;
 
                 else
-                    Console.WriteLine("Error code: 189");
+                    Console.WriteLine("Error code: 210");
             }
 
             if (running)
@@ -239,13 +248,11 @@ class MenuList
 
 
         }
-        Console.ResetColor();
-        
+        Console.ResetColor(); 
         Console.WriteLine();
         Console.WriteLine("Localized folder: System32");
 
         await Task.Delay(2500);
-
         Console.WriteLine("");
         Console.WriteLine("-- Folder to delete: System32");
         await Task.Delay(7500);
