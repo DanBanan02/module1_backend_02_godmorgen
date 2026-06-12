@@ -190,7 +190,7 @@ class MenuList
                     running = false;
 
                 else
-                    Console.WriteLine("Error code: 185");
+                    Console.WriteLine("Error code: 193");
             }
 
             // Page ( 2 )
@@ -215,7 +215,7 @@ class MenuList
                     running = false;
 
                 else
-                    Console.WriteLine("Error code: 210");
+                    Console.WriteLine("Error code: 218");
             }
 
             if (running)
